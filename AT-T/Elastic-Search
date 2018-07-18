@@ -1,0 +1,7 @@
+1. Connecting any environment 
+2. vtool connect private
+3. ./paas-logging.sh
+4. fl | grep elastic                                            # to see all elastics
+5. curl {elasticIP}:9020/_cluster/health | jq .                 # elastic health
+6. curl {elasticIP}:9020/_cat/indices                           # elastic indexes
+7. curl {elasticIP}:9200/{indexName}/_search| jq .              # elastic dataRows in index
